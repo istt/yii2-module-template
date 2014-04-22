@@ -5,6 +5,22 @@ Module Template for quickly write composer module. Just extract it and search re
 
 That is all!
 
+## Usage
+
+Use github to fork this repository.
+
+To create the message, navigate on the module directory after clone then run the following command:
+
+~~~
+../../../yii message/extract message-config.php
+~~~
+
+To install the schema after writing your migration:
+
+~~~
+../../../yii migrate/up --migrationPath=@vendor/istt/yii2-template-module/migrations
+~~~
+
 ## Install
 
 Modify the composer.json of your project:
@@ -67,3 +83,6 @@ $items =  [
 	}
 }
 ~~~
+
+
+
